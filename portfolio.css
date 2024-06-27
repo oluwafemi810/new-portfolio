@@ -107,12 +107,23 @@ button:hover{
     }
     .portfolio-body{
         width: 100%;
+        margin-top: 80px;
     }
     .upper-layer{
-        display: flex;
-        flex-direction: column ;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 1fr;
     }
-       
+
+    .image{
+        height: 300px;
+
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 80%;
+    }
+    
 
 }
