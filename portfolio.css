@@ -10,7 +10,7 @@ body{
     height: 80px;
     background-color: black;
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     
