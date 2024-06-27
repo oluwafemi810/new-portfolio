@@ -1,5 +1,6 @@
 p{
     font-family: Poppins;
+    margin: 0;
 }
 body{
     margin: 0;
@@ -13,6 +14,10 @@ body{
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
     
 }
 .header-content-left-part{
@@ -21,7 +26,7 @@ body{
 .name{
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .header-content-right-part{
@@ -41,10 +46,39 @@ body{
     text-decoration: underline;
 }
 
-.introduction{
-
+.portfolio-body{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+.upper-layer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 20%;
+}
+button{
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
 @media (max-width: 768px ){
     .header{
         width: 100%;
@@ -53,6 +87,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 30px;
         
     }
     .header-content-left-part{
@@ -61,7 +96,7 @@ body{
     .name{
         color: white;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .header-content-right-part{
@@ -70,5 +105,14 @@ body{
         z-index: -100;
         visibility: hidden;
     }
-    
+    .portfolio-body{
+        width: 100%;
+    }
+    .upper-layer{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+    }
+       
+
 }
